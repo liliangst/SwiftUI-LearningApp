@@ -18,6 +18,8 @@
 		382A985C26CA9E5F00076EA4 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = 382A985A26CA9E5F00076EA4 /* style.html */; };
 		382A985E26CAA25A00076EA4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A985D26CAA25A00076EA4 /* Models.swift */; };
 		382A986026CABE2300076EA4 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A985F26CABE2300076EA4 /* HomeViewRow.swift */; };
+		382A986226CB038200076EA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A986126CB038200076EA4 /* ContentView.swift */; };
+		382A986426CB0B9C00076EA4 /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A986326CB0B9C00076EA4 /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		382A985A26CA9E5F00076EA4 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		382A985D26CAA25A00076EA4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		382A985F26CABE2300076EA4 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		382A986126CB038200076EA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		382A986326CB0B9C00076EA4 /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			children = (
 				382A982826CA93A200076EA4 /* HomeView.swift */,
 				382A985F26CABE2300076EA4 /* HomeViewRow.swift */,
+				382A986126CB038200076EA4 /* ContentView.swift */,
+				382A986326CB0B9C00076EA4 /* ContentViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,7 +324,9 @@
 			files = (
 				382A982926CA93A200076EA4 /* HomeView.swift in Sources */,
 				382A986026CABE2300076EA4 /* HomeViewRow.swift in Sources */,
+				382A986226CB038200076EA4 /* ContentView.swift in Sources */,
 				382A982726CA93A200076EA4 /* LearningApp.swift in Sources */,
+				382A986426CB0B9C00076EA4 /* ContentViewRow.swift in Sources */,
 				382A985826CA949300076EA4 /* ContentModel.swift in Sources */,
 				382A985E26CAA25A00076EA4 /* Models.swift in Sources */,
 			);
