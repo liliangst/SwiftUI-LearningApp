@@ -11,7 +11,7 @@ class ContentModel: ObservableObject {
     
     @Published var modules = [Module]()
     
-    var style: Data?
+    var styleData: Data?
     
     init() {
         
@@ -46,7 +46,7 @@ class ContentModel: ObservableObject {
             // Read the file into a data object
             let styleData = try Data(contentsOf: styleUrl!)
             
-            self.style = styleData
+            self.styleData = styleData
             
         }catch {
             print("Couldn't parse style data")
