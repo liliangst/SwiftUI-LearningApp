@@ -25,6 +25,7 @@
 		382A986B26CBB6FE00076EA4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A986A26CBB6FE00076EA4 /* Constants.swift */; };
 		382A986D26CBF1D700076EA4 /* CodeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A986C26CBF1D700076EA4 /* CodeTextView.swift */; };
 		382A98A626CC521E00076EA4 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A526CC521E00076EA4 /* RectangleCard.swift */; };
+		382A98A826CD39E200076EA4 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A726CD39E200076EA4 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		382A986A26CBB6FE00076EA4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		382A986C26CBF1D700076EA4 /* CodeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTextView.swift; sourceTree = "<group>"; };
 		382A98A526CC521E00076EA4 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
+		382A98A726CD39E200076EA4 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				382A986526CBB10A00076EA4 /* ContentDetailView.swift */,
 				382A986C26CBF1D700076EA4 /* CodeTextView.swift */,
 				382A98A526CC521E00076EA4 /* RectangleCard.swift */,
+				382A98A726CD39E200076EA4 /* TestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				382A98A826CD39E200076EA4 /* TestView.swift in Sources */,
 				382A982926CA93A200076EA4 /* HomeView.swift in Sources */,
 				382A986026CABE2300076EA4 /* HomeViewRow.swift in Sources */,
 				382A986226CB038200076EA4 /* ContentView.swift in Sources */,
