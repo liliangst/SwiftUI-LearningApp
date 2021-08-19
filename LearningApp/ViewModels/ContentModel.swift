@@ -166,8 +166,8 @@ class ContentModel: ObservableObject {
         else {
             
             // If not, then reset the properties
-            currentQuestion = nil
             currentQuestionIndex = 0
+            currentQuestion = nil
         }
     }
     
