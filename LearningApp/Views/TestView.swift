@@ -10,13 +10,15 @@ import SwiftUI
 struct TestView: View {
     
     @EnvironmentObject var model:ContentModel
+    
     @State var selectedAnswerIndex: Int?
     @State var numCorrect = 0
     @State var submitted = false
+    @State var showResults = false
     
     var body: some View {
         
-        if model.currentQuestion != nil {
+        if model.currentQuestion != nil && !showResults {
             
             VStack (alignment: .leading) {
                 // Question number
@@ -79,12 +81,23 @@ struct TestView: View {
                     // Check if answer has been submitted
                     if submitted {
                         
-                        // Answer has already submitted, move to next question
-                        model.nextQuestion()
-                        
-                        // Reset properties
-                        submitted = false
-                        selectedAnswerIndex = nil
+                        // Check if it's the last question
+                        if model.currentQuestionIndex + 1 == model.currentModule!.test.questions.count {
+                            
+                            // Show the results
+                            showResults = true
+                            
+                        }
+                        else {
+                            
+                            // Answer has already submitted, move to next question
+                            model.nextQuestion()
+                            
+                            // Reset properties
+                            submitted = false
+                            selectedAnswerIndex = nil
+                            
+                        }
                     }
                     else {
                         
@@ -114,9 +127,12 @@ struct TestView: View {
             }
             .navigationBarTitle("\(model.currentModule?.category ?? "") Test")
         }
-        else {
+        else if showResults {
             // If current question is nil, we show the result view
             TestResultView(numCorrect: numCorrect)
+        }
+        else {
+            ProgressView()
         }
         
     }
