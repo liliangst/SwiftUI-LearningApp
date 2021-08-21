@@ -33,6 +33,7 @@ struct HomeView: View {
                                         }),
                                     tag: module.id,
                                     selection: $model.currentContentSelected) {
+                                    
                                         // Learning card
                                         HomeViewRow(image: module.content.image, title: "Learn \(module.category)", description: module.content.description, count: "\(module.content.lessons.count) Lessons", time: module.content.time)
                                     }
@@ -44,6 +45,7 @@ struct HomeView: View {
                                     }),
                                     tag: module.id,
                                     selection: $model.currentTestSelected){
+                                    
                                         // Test card
                                         HomeViewRow(image: module.test.image, title: "\(module.category) Test", description: module.test.description, count: "\(module.test.questions.count) Questions", time: module.test.time)
                                     }
@@ -52,7 +54,7 @@ struct HomeView: View {
                                 }
                               
                             }
-                            .padding(.bottom, 10)
+                            //.padding(.bottom, 10)
                         }
                     }
                     .accentColor(.black)
@@ -60,6 +62,16 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Get Started")
+            .onChange(of: model.currentContentSelected, perform: { changedValue in
+                if changedValue == nil {
+                    model.currentModule = nil
+                }
+            })
+            .onChange(of: model.currentTestSelected, perform: { changedValue in
+                if changedValue == nil {
+                    model.currentModule = nil
+                }
+            })
         }
         
     }
