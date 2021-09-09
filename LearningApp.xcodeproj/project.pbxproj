@@ -27,6 +27,8 @@
 		382A98A626CC521E00076EA4 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A526CC521E00076EA4 /* RectangleCard.swift */; };
 		382A98A826CD39E200076EA4 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A726CD39E200076EA4 /* TestView.swift */; };
 		382A98AA26CE8A6400076EA4 /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A926CE8A6400076EA4 /* TestResultView.swift */; };
+		3885E72926E6B92E00AEDF9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3885E72826E6B92E00AEDF9B /* GoogleService-Info.plist */; };
+		76011BB9972D3BD8807EC25A /* Pods_LearningApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		382A98A526CC521E00076EA4 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		382A98A726CD39E200076EA4 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		382A98A926CE8A6400076EA4 /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
+		3885E72826E6B92E00AEDF9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		778A4ACE04C379D8AD5748B2 /* Pods-LearningApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp.release.xcconfig"; path = "Target Support Files/Pods-LearningApp/Pods-LearningApp.release.xcconfig"; sourceTree = "<group>"; };
+		DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB39A26E8E34101E3080404E /* Pods-LearningApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp.debug.xcconfig"; path = "Target Support Files/Pods-LearningApp/Pods-LearningApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A986926CBB46900076EA4 /* AVKit.framework in Frameworks */,
+				76011BB9972D3BD8807EC25A /* Pods_LearningApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +108,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		264EB85CE1ED982815DBAFED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB39A26E8E34101E3080404E /* Pods-LearningApp.debug.xcconfig */,
+				778A4ACE04C379D8AD5748B2 /* Pods-LearningApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		382A981A26CA93A200076EA4 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +126,7 @@
 				382A984226CA93A300076EA4 /* LearningAppUITests */,
 				382A982426CA93A200076EA4 /* Products */,
 				382A986726CBB46900076EA4 /* Frameworks */,
+				264EB85CE1ED982815DBAFED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +151,7 @@
 				382A985626CA944600076EA4 /* Helpers */,
 				382A982A26CA93A300076EA4 /* Assets.xcassets */,
 				382A982F26CA93A300076EA4 /* Info.plist */,
+				3885E72826E6B92E00AEDF9B /* GoogleService-Info.plist */,
 				382A982C26CA93A300076EA4 /* Preview Content */,
 			);
 			path = LearningApp;
@@ -217,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				382A986826CBB46900076EA4 /* AVKit.framework */,
+				DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 382A984826CA93A300076EA4 /* Build configuration list for PBXNativeTarget "LearningApp" */;
 			buildPhases = (
+				E7272AF6500F38178051FE70 /* [CP] Check Pods Manifest.lock */,
 				382A981F26CA93A200076EA4 /* Sources */,
 				382A982026CA93A200076EA4 /* Frameworks */,
 				382A982126CA93A200076EA4 /* Resources */,
+				5BC700095687C5CF82546DE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -328,6 +350,7 @@
 				382A985B26CA9E5F00076EA4 /* data.json in Resources */,
 				382A985C26CA9E5F00076EA4 /* style.html in Resources */,
 				382A982B26CA93A300076EA4 /* Assets.xcassets in Resources */,
+				3885E72926E6B92E00AEDF9B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +369,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BC700095687C5CF82546DE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningApp/Pods-LearningApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningApp/Pods-LearningApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearningApp/Pods-LearningApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7272AF6500F38178051FE70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		382A981F26CA93A200076EA4 /* Sources */ = {
@@ -518,6 +583,7 @@
 		};
 		382A984926CA93A300076EA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB39A26E8E34101E3080404E /* Pods-LearningApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -540,6 +606,7 @@
 		};
 		382A984A26CA93A300076EA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 778A4ACE04C379D8AD5748B2 /* Pods-LearningApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
