@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -27,6 +27,9 @@
 		382A98A626CC521E00076EA4 /* RectangleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A526CC521E00076EA4 /* RectangleCard.swift */; };
 		382A98A826CD39E200076EA4 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A726CD39E200076EA4 /* TestView.swift */; };
 		382A98AA26CE8A6400076EA4 /* TestResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A98A926CE8A6400076EA4 /* TestResultView.swift */; };
+		385E553B26F929180002CA7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E553A26F929180002CA7C /* LoginView.swift */; };
+		385E553D26F929510002CA7C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E553C26F929510002CA7C /* ProfileView.swift */; };
+		385E553F26F929720002CA7C /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E553E26F929720002CA7C /* LaunchView.swift */; };
 		3885E72926E6B92E00AEDF9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3885E72826E6B92E00AEDF9B /* GoogleService-Info.plist */; };
 		76011BB9972D3BD8807EC25A /* Pods_LearningApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +78,9 @@
 		382A98A526CC521E00076EA4 /* RectangleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleCard.swift; sourceTree = "<group>"; };
 		382A98A726CD39E200076EA4 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		382A98A926CE8A6400076EA4 /* TestResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultView.swift; sourceTree = "<group>"; };
+		385E553A26F929180002CA7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		385E553C26F929510002CA7C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		385E553E26F929720002CA7C /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		3885E72826E6B92E00AEDF9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		778A4ACE04C379D8AD5748B2 /* Pods-LearningApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp.release.xcconfig"; path = "Target Support Files/Pods-LearningApp/Pods-LearningApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,7 +120,6 @@
 				EB39A26E8E34101E3080404E /* Pods-LearningApp.debug.xcconfig */,
 				778A4ACE04C379D8AD5748B2 /* Pods-LearningApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,10 +149,10 @@
 			isa = PBXGroup;
 			children = (
 				382A982626CA93A200076EA4 /* LearningApp.swift */,
-				382A985426CA943300076EA4 /* Resources */,
 				382A985326CA942E00076EA4 /* Models */,
 				382A985226CA942700076EA4 /* ViewModels */,
 				382A985126CA942000076EA4 /* Views */,
+				382A985426CA943300076EA4 /* Resources */,
 				382A985626CA944600076EA4 /* Helpers */,
 				382A982A26CA93A300076EA4 /* Assets.xcassets */,
 				382A982F26CA93A300076EA4 /* Info.plist */,
@@ -186,15 +191,12 @@
 		382A985126CA942000076EA4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				382A982826CA93A200076EA4 /* HomeView.swift */,
-				382A985F26CABE2300076EA4 /* HomeViewRow.swift */,
-				382A986126CB038200076EA4 /* ContentView.swift */,
-				382A986326CB0B9C00076EA4 /* ContentViewRow.swift */,
-				382A986526CBB10A00076EA4 /* ContentDetailView.swift */,
-				382A986C26CBF1D700076EA4 /* CodeTextView.swift */,
-				382A98A526CC521E00076EA4 /* RectangleCard.swift */,
-				382A98A726CD39E200076EA4 /* TestView.swift */,
-				382A98A926CE8A6400076EA4 /* TestResultView.swift */,
+				385E553E26F929720002CA7C /* LaunchView.swift */,
+				385E553926F928530002CA7C /* Common */,
+				385E553826F9284F0002CA7C /* Test */,
+				385E553726F928470002CA7C /* Lesson */,
+				385E553626F928420002CA7C /* Home */,
+				385E553526F9283A0002CA7C /* Account */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,7 +222,6 @@
 			children = (
 				382A985926CA9E5F00076EA4 /* data.json */,
 				382A985A26CA9E5F00076EA4 /* style.html */,
-				382A986A26CBB6FE00076EA4 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -228,6 +229,7 @@
 		382A985626CA944600076EA4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				382A986A26CBB6FE00076EA4 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -239,6 +241,52 @@
 				DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		385E553526F9283A0002CA7C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				385E553A26F929180002CA7C /* LoginView.swift */,
+				385E553C26F929510002CA7C /* ProfileView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		385E553626F928420002CA7C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				382A982826CA93A200076EA4 /* HomeView.swift */,
+				382A985F26CABE2300076EA4 /* HomeViewRow.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		385E553726F928470002CA7C /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				382A986126CB038200076EA4 /* ContentView.swift */,
+				382A986326CB0B9C00076EA4 /* ContentViewRow.swift */,
+				382A986526CBB10A00076EA4 /* ContentDetailView.swift */,
+			);
+			path = Lesson;
+			sourceTree = "<group>";
+		};
+		385E553826F9284F0002CA7C /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				382A98A726CD39E200076EA4 /* TestView.swift */,
+				382A98A926CE8A6400076EA4 /* TestResultView.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		385E553926F928530002CA7C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				382A986C26CBF1D700076EA4 /* CodeTextView.swift */,
+				382A98A526CC521E00076EA4 /* RectangleCard.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,13 +466,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				382A98A826CD39E200076EA4 /* TestView.swift in Sources */,
+				385E553F26F929720002CA7C /* LaunchView.swift in Sources */,
 				382A98AA26CE8A6400076EA4 /* TestResultView.swift in Sources */,
 				382A982926CA93A200076EA4 /* HomeView.swift in Sources */,
 				382A986026CABE2300076EA4 /* HomeViewRow.swift in Sources */,
 				382A986226CB038200076EA4 /* ContentView.swift in Sources */,
 				382A986626CBB10A00076EA4 /* ContentDetailView.swift in Sources */,
 				382A982726CA93A200076EA4 /* LearningApp.swift in Sources */,
+				385E553D26F929510002CA7C /* ProfileView.swift in Sources */,
 				382A986426CB0B9C00076EA4 /* ContentViewRow.swift in Sources */,
+				385E553B26F929180002CA7C /* LoginView.swift in Sources */,
 				382A986D26CBF1D700076EA4 /* CodeTextView.swift in Sources */,
 				382A985826CA949300076EA4 /* ContentModel.swift in Sources */,
 				382A985E26CAA25A00076EA4 /* Models.swift in Sources */,
