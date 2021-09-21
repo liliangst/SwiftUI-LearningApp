@@ -7,9 +7,14 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 
 class ContentModel: ObservableObject {
     
+    // Authentication
+    @Published var loggedIn = false
+    
+    // Reference to cloud Firestore database
     let db = Firestore.firestore();
     
     // List of modules
@@ -41,6 +46,15 @@ class ContentModel: ObservableObject {
        
     }
  
+    // MARK: - Authentication methods
+    
+    func checkLogin() {
+        
+        // Check if there's a current user to determine logged in status
+        loggedIn = Auth.auth().currentUser != nil ? true : false
+        
+    }
+    
     // MARK: - Data methods
     
     func getLessons(module: Module, completion: @escaping () -> Void) {

@@ -11,4 +11,8 @@ struct Constants {
     
     static var videoHostUrl = ""
     
+    enum LoginMode {
+        case login
+        case createAccount
+    }
 }
