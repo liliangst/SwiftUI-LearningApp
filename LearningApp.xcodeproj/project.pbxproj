@@ -30,6 +30,7 @@
 		385E553B26F929180002CA7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E553A26F929180002CA7C /* LoginView.swift */; };
 		385E553D26F929510002CA7C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E553C26F929510002CA7C /* ProfileView.swift */; };
 		385E553F26F929720002CA7C /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E553E26F929720002CA7C /* LaunchView.swift */; };
+		385E554126FD29200002CA7C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385E554026FD29200002CA7C /* UserService.swift */; };
 		3885E72926E6B92E00AEDF9B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3885E72826E6B92E00AEDF9B /* GoogleService-Info.plist */; };
 		76011BB9972D3BD8807EC25A /* Pods_LearningApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		385E553A26F929180002CA7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		385E553C26F929510002CA7C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		385E553E26F929720002CA7C /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		385E554026FD29200002CA7C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3885E72826E6B92E00AEDF9B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		778A4ACE04C379D8AD5748B2 /* Pods-LearningApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp.release.xcconfig"; path = "Target Support Files/Pods-LearningApp/Pods-LearningApp.release.xcconfig"; sourceTree = "<group>"; };
 		DB4CE03E6FB14E24FD7B18FF /* Pods_LearningApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -230,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				382A986A26CBB6FE00076EA4 /* Constants.swift */,
+				385E554026FD29200002CA7C /* UserService.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				382A982926CA93A200076EA4 /* HomeView.swift in Sources */,
 				382A986026CABE2300076EA4 /* HomeViewRow.swift in Sources */,
 				382A986226CB038200076EA4 /* ContentView.swift in Sources */,
+				385E554126FD29200002CA7C /* UserService.swift in Sources */,
 				382A986626CBB10A00076EA4 /* ContentDetailView.swift in Sources */,
 				382A982726CA93A200076EA4 /* LearningApp.swift in Sources */,
 				385E553D26F929510002CA7C /* ProfileView.swift in Sources */,
