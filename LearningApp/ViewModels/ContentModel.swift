@@ -61,6 +61,31 @@ class ContentModel: ObservableObject {
     
     // MARK: - Data methods
     
+    func saveData(writeToDatabase: Bool = false) {
+        
+        if let loggedInUser = Auth.auth().currentUser {
+            
+            // Save the progress data locally
+            let user = UserService.shared.user
+            
+            user.lastModule = currentModuleIndex
+            user.lastLesson = currentLessonIndex
+            user.lastQuestion = currentQuestionIndex
+            
+            if writeToDatabase {
+                
+                // Save it to the database
+                let db = Firestore.firestore()
+                let ref = db.collection("users").document(loggedInUser.uid)
+                ref.setData(["lastModule" : user.lastModule ?? NSNull(),
+                             "lastLesson" : user.lastLesson ?? NSNull(),
+                             "lastQuestion" : user.lastQuestion ?? NSNull()], merge: true)
+            }
+        }
+        
+        
+    }
+    
     func getUserData() {
         
         // Check that there's a logged in user
@@ -348,6 +373,9 @@ class ContentModel: ObservableObject {
     
     func beginLesson(_ lessonIndex: Int) {
         
+        // Reset the question index since the user is stating lessons now
+        currentQuestionIndex = 0
+        
         // Check that the lesson index is within range of module lessons
         if lessonIndex < currentModule!.content.lessons.count {
             currentLessonIndex = lessonIndex
@@ -379,6 +407,9 @@ class ContentModel: ObservableObject {
             currentLessonIndex = 0
             currentLesson = nil
         }
+        
+        // Save data
+        saveData()
     }
     
     func hasNextLesson() -> Bool {
@@ -397,6 +428,9 @@ class ContentModel: ObservableObject {
         
         // Set the current index
         currentQuestionIndex = 0
+        
+        // Reset the lesson index since the user is stating test now
+        currentLessonIndex = 0
         
         // If there are questions, set the current question to the first one
         if currentModule?.test.questions.count ?? 0 > 0 {
@@ -425,6 +459,9 @@ class ContentModel: ObservableObject {
             currentQuestionIndex = 0
             currentQuestion = nil
         }
+        
+        // Save data
+        saveData()
     }
     
     // MARK: - Code Styling

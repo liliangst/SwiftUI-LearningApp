@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		380E6C2A27010C6A00B44FF4 /* ResumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380E6C2927010C6A00B44FF4 /* ResumeView.swift */; };
 		382A982726CA93A200076EA4 /* LearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A982626CA93A200076EA4 /* LearningApp.swift */; };
 		382A982926CA93A200076EA4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382A982826CA93A200076EA4 /* HomeView.swift */; };
 		382A982B26CA93A300076EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382A982A26CA93A300076EA4 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		380E6C2927010C6A00B44FF4 /* ResumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeView.swift; sourceTree = "<group>"; };
 		382A982326CA93A200076EA4 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		382A982626CA93A200076EA4 /* LearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningApp.swift; sourceTree = "<group>"; };
 		382A982826CA93A200076EA4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 			children = (
 				382A982826CA93A200076EA4 /* HomeView.swift */,
 				382A985F26CABE2300076EA4 /* HomeViewRow.swift */,
+				380E6C2927010C6A00B44FF4 /* ResumeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				382A982726CA93A200076EA4 /* LearningApp.swift in Sources */,
 				385E553D26F929510002CA7C /* ProfileView.swift in Sources */,
 				382A986426CB0B9C00076EA4 /* ContentViewRow.swift in Sources */,
+				380E6C2A27010C6A00B44FF4 /* ResumeView.swift in Sources */,
 				385E553B26F929180002CA7C /* LoginView.swift in Sources */,
 				382A986D26CBF1D700076EA4 /* CodeTextView.swift in Sources */,
 				382A985826CA949300076EA4 /* ContentModel.swift in Sources */,
